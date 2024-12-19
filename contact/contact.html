@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" type="image/png" href="../images/logo.png">
+
+  <link rel="stylesheet" href="./contact.css">
+</head>
+
+<body>
+  <div class="whatsapp-box">
+    <a href="https://wa.me/+917024134470?text=Hello%20Ujjwal%20Academy,%20I%20came%20across%20your%20portfolio%20and%20would%20like%20to%20know%20about%20your%20courses%20and%20institute."
+      target="_blank">
+      <img src="../images/whatsapp.png" alt="WhatsApp" />
+    </a>
+  </div>
+  <nav id="navbar">
+    <div class="navbar-left">
+      <a href="../index.html"><img src="../images/logo.png" alt="Ujjwal Academy"></a>
+    </div>
+    <div class="navbar-right">
+      <a href="../index.html" class="link-a">Home</a>
+      <a href="../about/about.html" class="link-a">About</a>
+      <a href="../services/service.html" class="link-a">Services</a>
+      <a href="../portfolio/portfolio.html" class="link-a">Portfolio</a>
+      <a href="../blog/blog.html" class="link-a">Blogs</a>
+      <a href="./contact.html" class="link-a">Contact</a>
+    </div>
+    <img src="../images/menu.png" alt="" onclick="displayMenu()">
+    <div class="side-menu" id="sideMenu" style="display: none;">
+
+      <a href="../index.html" class="link-a">Home</a>
+      <a href="../about/about.html" class="link-a">About</a>
+      <a href="../services/service.html" class="link-a">Services</a>
+      <a href="../portfolio/portfolio.html" class="link-a">Portfolio</a>
+      <a href="../blog/blog.html" class="link-a">Blogs</a>
+      <a href="./contact.html" class="link-a">Contact</a>
+      <img src="../images/close.png" alt="" id="closeBtn" onclick="hideMenu()">
+    </div>
+  </nav>
+
+  <div class="contact-page-landing-section">
+    <div class="contact-page-landing-section-left">
+      <!-- <img src="../images/circleCollage.png" alt=""> -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82765.36613645902!2d79.51999756472884!3d24.921770524531357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3983037656ecdf8f%3A0x8536ead56e5035e!2sNalanda%20g.s.%20library!5e0!3m2!1sen!2sin!4v1734117178837!5m2!1sen!2sin"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <form action="#" class="contact-form" id="Contact" data-aos="zoom-in-up" data-aos-duration="1000">
+      <h3>Contact Form</h3>
+
+      <div class="form-container">
+        <!-- User Information -->
+        <div class="input-box">
+          <p>Your Name *</p>
+          <input type="text" class="input-field" id="Name" placeholder="Enter your full name">
+          <span id="NameSpan" class="error-message"></span>
+        </div>
+
+        <div class="input-box">
+          <p>Email Address</p>
+          <input type="text" class="input-field" id="EmailAddress" placeholder="Enter your email address">
+          <span id="emailSpan" class="error-message"></span>
+        </div>
+
+        <div class="input-box">
+          <p>Contact Number *</p>
+          <input type="text" class="input-field" id="PhoneNumber" maxlength="10" placeholder="Enter your phone number"
+            onkeypress=" return onlyNumberKey(event)">
+          <span id="phoneSpan" class="error-message"></span>
+        </div>
+
+        <div class="input-box">
+          <p>City/Village *</p>
+          <input type="text" class="input-field" id="City" placeholder="Enter your city or location">
+          <span id="CitySpan" class="error-message"></span>
+        </div>
+
+        <!-- Course Selection -->
+        <div class="input-box">
+          <p>Course/Exam Interested In *</p>
+          <select class="input-field" id="Course">
+            <option value="" disabled selected>Select a course</option>
+            <option value="mppsc">MPPSC (Pre-Mains)</option>
+            <option value="ssc">SSC</option>
+            <option value="bank">Banking</option>
+            <option value="railway">Railway</option>
+            <option value="mp-si">MP SI</option>
+            <option value="mp-police">MP Police</option>
+            <option value="mp-patwari">MP Patwari</option>
+            <option value="mp-jail-prahari">MP Jail Prahari</option>
+            <option value="ssc-gd">SSC GD</option>
+            <option value="mp-varg-1-2-3">MP Varg 1, 2, 3</option>
+            <option value="other">Other</option>
+          </select>
+          <span id="courseSpan" class="error-message"></span>
+        </div>
+
+        <div class="input-box">
+          <p>How Did You Hear About Us?</p>
+          <select class="input-field" id="HowDidKnow">
+            <option value="" disabled selected>Select one</option>
+            <option value="facebook">Facebook</option>
+            <option value="instagram">Instagram</option>
+            <option value="friends">Friends/Family</option>
+            <option value="website">Website</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <!-- Query Section -->
+        <div class="input-box">
+          <p>Your Query</p>
+          <textarea placeholder="Write your query here..." id="Query"></textarea>
+          <span id="querySpan" class="error-message"></span>
+        </div>
+      </div>
+
+      <input type="submit" value="Send Message" class="btn-a" onclick="SubmitForm()">
+    </form>
+
+
+
+
+  </div>
+
+
+  <!-- <div class="contact-page-second-section">
+        <div class="contact-page-second-section-left">
+            <h3>Connect With Us</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quasi illum beatae voluptas sit quisquam, itaque inventore. Ipsum possimus facilis nobis asperiores, .</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, eveniet impedit. Magnam fuga repellat facilis, veniam quod itaque nostrum iste culpa ab tempore aut consequuntur fugiat, iusto aliquid non nihil!</p>
+        </div>
+        <div class="contact-page-second-section-right">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28021.515400931417!2d77.21230517660234!3d28.609092569650883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce2db961be393%3A0xf6c7ef5ee6dd10ae!2sIndia%20Gate%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1713596172189!5m2!1sen!2sin" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div> -->
+
+  <div class="contact-page-third-section">
+    <div class="contact-page-third-section-card" id="num">
+      <img src="../images/call.png" alt="" id="img-call">
+      <h4 data-aos="zoom-in" data-aos-duration="1000">
+        <a href="tel:+918770250800">+91 8770250800</a>,
+        <a href="tel:+919981034217">+91 9981034217</a>
+      </h4>
+    </div>
+    <div class="contact-page-third-section-card">
+      <img src="../images/mail.png" alt="">
+      <h4 data-aos="zoom-out" data-aos-duration="1000">
+        <a href="mailto:ujjwalacademny@ujjwal.com">ujjwalacademny@ujjwal.com</a>
+      </h4>
+    </div>
+    <div class="contact-page-third-section-card">
+      <img src="../images/map.png" alt="">
+      <h4 data-aos="zoom-in-up" data-aos-duration="1000">Near Study Villa library,Sinchai Colony, Panna Naka Chhatarpur
+        471001 (M.P.) </h4>
+    </div>
+    <!-- <div class="contact-page-third-section-card"></div> -->
+  </div>
+
+
+  <!-- <div class="special-thanks"></div> -->
+  <footer id="footer" style="background-color: #c51919;">
+    <div class="footer-top">
+      <div class="column" id="footerColumn1">
+        <img src="../images/logo.png" alt="">
+      </div>
+
+      <div class="column" id="footerColumn2">
+        <h4>IMPORTANT LINKS</h4>
+        <a href="../index.html">Home</a>
+        <a href="../about/about.html">About</a>
+        <a href="../services/service.html">Services</a>
+        <a href="../portfolio/portfolio.html">Portfolio</a>
+        <a href="#">Blogs</a>
+        <a href="../contact/contact.html">Contact Us</a>
+      </div>
+      <div class="column" id="footerColumn3">
+        <h4>ADDRESS</h4>
+        <p>Near Study Villa library, Sinchai Colony, Panna Naka Chhatarpur 471001 (M.P.)</p>
+        <div class="tyy">
+          <div class="basic-row">
+            <img src="../images/call.png" alt="">
+            <a href="tel:+918770250800">+91 8770250800</a>
+          </div>
+          <div class="basic-row">
+            <img src="../images/mail.png" alt="">
+            <a href="mailto:ujjwalacademny@ujjwal.com">ujjwalacademny@ujjwal.com</a>
+          </div>
+        </div>
+        <div class="basic-row">
+          <a href="https://youtube.com/c/mathsbyadityahargovindsir" target="_blank" class="social-link">
+            <img src="../images/youtube.png" class="social-icon" alt="">
+            <span class="social-name">YouTube</span>
+          </a>
+          <a href="https://facebook.com/hargovindaditya.sahu" target="_blank" class="social-link">
+            <img src="../images/facebook.png" class="social-icon" alt="">
+            <span class="social-name">Facebook</span>
+          </a>
+          <a href="https://www.instagram.com/aditya_sahu_sir/" target="_blank" class="social-link">
+            <img src="../images/instagram.png" class="social-icon" alt="">
+            <span class="social-name">Instagram</span>
+          </a>
+          <a href="https://t.me/AdityaHargovindSirMathsExpert" target="_blank" class="social-link">
+            <img src="../images/telegram.png" class="social-icon" alt="">
+            <span class="social-name">Telegram</span>
+          </a>
+          <a href="#" class="social-link">
+            <img src="../images/linkedin.png" class="social-icon" alt="">
+            <span class="social-name">LinkedIn</span>
+          </a>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="footer-bottom">
+      <p>
+        <a href="https://www.linkedin.com/company/apsra-web-development/posts/?feedView=images&viewAsMember=true"
+          target="_blank">Website Designed &amp;
+          Developed By </a>
+      </p>
+    </div>
+  </footer>
+
+
+  <!-- <div class="error-screen">
+          <img src="../images/404.png" alt="">
+      </div> -->
+
+  <script src="../script.js"> </script>
+  <script>
+    const emailField = document.getElementById('EmailAddress');
+    const phoneField = document.getElementById('PhoneNumber');
+    const NameField = document.getElementById('Name');
+    const CourseField = document.getElementById('Course');
+    const CityField = document.getElementById('City');
+    const HowDidKnowField = document.getElementById('HowDidKnow');
+    const QueryField = document.getElementById('Query');
+
+    const emailSpan = document.getElementById('emailSpan');
+    const phoneSpan = document.getElementById('phoneSpan');
+    const NameSpan = document.getElementById('NameSpan');
+    const CourseSpan = document.getElementById('courseSpan');
+    const CitySpan = document.getElementById('CitySpan');
+    const form = document.getElementById('Contact');
+
+    const url = 'https://script.google.com/macros/s/AKfycbxQBYgvjwsKgFKR2syaPGZd-mjNWexPnN2lgFiax6TYz_23j7GDR9Y8smOqzZbiK0Cwbw/exec';
+
+    function resetErrorMessages() {
+      [emailSpan, phoneSpan, NameSpan, CourseSpan, CitySpan].forEach(span => span.textContent = '');
+    }
+
+    function validateFields() {
+      resetErrorMessages();
+      let isValid = true;
+
+      if (!/^\d{10}$/.test(phoneField.value)) {
+        phoneSpan.textContent = phoneField.value ? 'Phone number must be 10 digits.' : 'Phone number is required.';
+        phoneSpan.style.color = 'red';
+        isValid = false;
+      }
+
+      if (NameField.value.trim() === '') {
+        NameSpan.textContent = 'Name is required.';
+        NameSpan.style.color = 'red';
+        isValid = false;
+      }
+
+      if (CourseField.value.trim() === '') {
+        CourseSpan.textContent = 'Please select a course.';
+        CourseSpan.style.color = 'red';
+        isValid = false;
+      }
+
+      if (CityField.value.trim() === '') {
+        CitySpan.textContent = 'Please enter City/Village name.';
+        CitySpan.style.color = 'red';
+        isValid = false;
+      }
+
+      if (emailField.value && !isValidEmail(emailField.value)) {
+        emailSpan.textContent = 'Invalid email address.';
+        emailSpan.style.color = 'red';
+        isValid = false;
+      }
+
+      return isValid;
+    }
+    function SubmitForm() {
+      form.onsubmit = function (event) {
+        debugger
+        event.preventDefault();
+
+        if (!validateFields()) return;
+
+        const formData = new FormData(form);
+        const today = new Date().toLocaleString('en-US', { timeZone: 'Asia/Kolkata' });
+
+        formData.append('date', today);
+        formData.append('Name', NameField.value);
+        formData.append('EmailAddress', emailField.value);
+        formData.append('PhoneNumber', phoneField.value);
+        formData.append('City', CityField.value);
+        formData.append('Course', CourseField.value);
+        formData.append('HowDidKnow', HowDidKnowField.value);
+        formData.append('Query', QueryField.value);
+
+        fetch(url, {
+          method: 'POST',
+          body: formData
+        })
+          .then(res => res.text())
+          .then(response => {
+            console.log("Response:", response);
+            alert("Form submitted successfully!");
+            form.reset();
+            resetErrorMessages();
+          })
+          .catch(err => {
+            console.error("Error:", err);
+            alert("Failed to submit form. Please try again.");
+          });
+      };
+    }
+    function isValidEmail(email) {
+      const emailRegex = /^[\w-\.]+@[\w-]+\.[a-z]{2,}$/i;
+      return emailRegex.test(email);
+    }
+
+    phoneField.addEventListener('input', function () {
+      this.value = this.value.replace(/[^0-9]/g, '');
+    });
+  </script>
+
+</body>
+
+</html>
